@@ -1,0 +1,12 @@
+
+.wrapper{
+    height: 100vh;
+    padding: var(--all_content_magrin_top) var(--all_content_magrin_right) var(--all_content_magrin_bottom) var(--all_content_magrin_left);
+    width: 100vw;
+}
+.wrapper, .wrapper *{
+    box-sizing: border-box;
+}
+
+
+

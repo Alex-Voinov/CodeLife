@@ -1,0 +1,17 @@
+.authorization_form_header_content{
+    width: 100%;
+    position: relative;
+    background-color: black;
+    height: var(--authorization_form_title_height);
+    border-radius: 50px 50px 0px 0px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size:  min(5vh, 3vw);
+    line-height: min(5vh, 3vw);
+    text-align: center;
+    color: var(--main_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

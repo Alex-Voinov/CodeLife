@@ -1,0 +1,18 @@
+:root{
+    --Company_title_width: 35vw;
+    --Company_title_height: 26vh;
+    --main_color: #009AAC;
+}
+
+.company_title{
+    width: var(--Company_title_width);
+    height: var(--Company_title_height);
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 700;
+    font-size: min(14vh, 10vw);
+    line-height: min(12vh, 8vw);
+    text-align: center;
+    color: var(--main_color);
+    text-align: center;
+}
