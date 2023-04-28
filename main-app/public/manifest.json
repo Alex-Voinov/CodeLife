@@ -1,0 +1,34 @@
+{
+    "icons": [
+        {
+            "src": "%PUBLIC_URL%/favicons/favicon_16x16.ico",
+            "sizes": "16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "%PUBLIC_URL%/favicons/favicon_32x32.ico",
+            "sizes": "32x32",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "%PUBLIC_URL%/favicons/favicon_48x48.ico",
+            "sizes": "48x48",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "%PUBLIC_URL%/favicons/favicon_57x57.ico",
+            "sizes": "57x57",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "%PUBLIC_URL%/favicons/favicon_72x72.ico",
+            "sizes": "72x72",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "%PUBLIC_URL%/favicons/favicon_98x98.ico",
+            "sizes": "98x98",
+            "type": "image/x-icon"
+        } 
+    ]
+}
