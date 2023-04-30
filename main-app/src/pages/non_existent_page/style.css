@@ -3,14 +3,15 @@
     width: 100vw;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .local_header {
     position: absolute;
     height: 10vh;
-    width: 80vw;
-    top: 10vh;
-    left: 10vw;
+    width: 45vw;
+    top: 12vh;
+    left: 49vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,33 +19,21 @@
 }
 
 .company_title {
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
 }
 
 .error_ntf {
-    font-size: 50px;
-}
-
-.company_logo {
-    width: 5vw;
-    height: 5vh;
-    border-radius: 20px;
-    display: flex;
+    font-size: 100px;
     text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: #009aad solid 2px;
-    font-size: 30px;
 }
 
 .local_midle {
     position: relative;
     top: 38vh;
-    left: 40vw;
+    left: 62vw;
     width: 20vw;
-    height: 28vh;
+    height: 55vh;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -67,6 +56,7 @@
 }
 
 .glow_element {
+    color: aliceblue;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     animation: glow 1s ease-in-out infinite alternate;
 }
@@ -78,5 +68,40 @@
 
     100% {
         text-shadow: 0 0 20px rgba(0, 154, 173, 1);
+    }
+}
+
+.girl_image {
+    position: absolute;
+    width: 50vw;
+    height: 102vh;
+    top: -1vh;
+    left: 0vw;
+}
+
+.blur_animation {
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation: blur 6s infinite;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(10px);
+    }
+
+    20% {
+        filter: blur(0px);
+    }
+
+    80% {
+        filter: blur(0px);
+    }
+    90% {
+        filter: blur(2px);
+    }
+
+    100% {
+        filter: blur(5px);
     }
 }

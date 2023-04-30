@@ -1,0 +1,13 @@
+.company_logo{
+    width: 8vw;
+    height: 8vh;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #009aad solid 2px;
+    font-size: 40px;
+    color: #009aad;
+}
