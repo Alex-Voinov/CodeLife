@@ -1,22 +1,15 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom';
-import './style.css';
+import {useNavigate } from 'react-router-dom';
+import generateFunctionTransfer from '../../utils/animatedBacground';
+
 const StartPage = () => {
-
     const history = useNavigate();
-
-    const handleAuthClick = (e) => {
-        e.preventDefault();
-        document.body.classList.add('blackout');
-        setTimeout(function () {
-            history('/authorization', {replace: true});
-        }, 1000);
-    }
-
+    const [handleAuthClick, go404] = generateFunctionTransfer(history, ['authorization','какая-то дичь'])
     return (
         <div>
             <div>StartPage</div>
-            <Link to="/authorization" onClick={handleAuthClick}>authorization</Link>
+            <div onClick={handleAuthClick}>authorization</div>
+            <div onClick={go404}>404</div>
         </div>
     )
 }
