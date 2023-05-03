@@ -1,11 +1,18 @@
 import React from 'react'
-import Matrix from '../../components/Matrix'
+import Matrix from '../../components/Decorations/Matrix/Matrix'
 import { animatedBacgroundDelete } from '../../utils/animatedBacground';
 import './style.css';
+import CircularIconPanel from '../../components/Decorations/CircularIconPanel/CircularIconPanel'
 
 const AuthorizationPage = () => {
-    animatedBacgroundDelete()
-
+    animatedBacgroundDelete();
+    const dataIcons = [
+        'apple',
+        'facebook',
+        'twitter',
+        'vk',
+        'google'
+    ];
     return (
         <>
             <Matrix />
@@ -47,11 +54,7 @@ const AuthorizationPage = () => {
                         </div>
                     </form>
                     <div id="authorization_form_footer">
-                        <div className="social_logo clickable" id="logo_facebook"></div>
-                        <div className="social_logo clickable" id="logo_google"></div>
-                        <div className="social_logo clickable" id="logo_vk"></div>
-                        <div className="social_logo clickable" id="logo_tweter"></div>
-                        <div className="social_logo clickable" id="logo_apple"></div>
+                        <CircularIconPanel dataIcons={dataIcons} styleIcons={{width: '3vw', height:' 5vh'}}/>  
                         <div className="clickable" id="lang_selecter">
                             RU
                         </div>

@@ -9,7 +9,7 @@ const StartPage = () => {
         <div>
             <div>StartPage</div>
             <div onClick={handleAuthClick}>authorization</div>
-            <div onClick={go404}>404</div>
+            <div onClick={go404}>404</div>           
         </div>
     )
 }

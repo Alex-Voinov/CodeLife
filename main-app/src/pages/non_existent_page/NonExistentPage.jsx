@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './style.css';
-import AnimatedStripe from '../../components/AnimatedStripe';
+import AnimatedStripe from '../../components/Decorations/AnimatedStripe/AnimatedStripe';
 import DesignButton from '../../components/UI/Button/DesignButton';
 import { useNavigate } from 'react-router-dom';
 import generateFunctionTransfer from '../../utils/animatedBacground';
