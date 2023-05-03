@@ -17,7 +17,7 @@ const AuthorizationForm = ({switchFunc, sAuth}) => {
                 </StandartedCheckbox>
                 <UnderlinedLink>Забыли пароль?</UnderlinedLink>
             </div>
-            <div id="buttons_container">
+            <div className="buttons_container">
                 <DesignButton onClick={sAuth}>
                     Войти
                 </DesignButton>

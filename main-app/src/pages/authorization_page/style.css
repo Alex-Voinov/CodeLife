@@ -108,7 +108,7 @@
 }
 
 
-#buttons_container {
+.buttons_container {
     box-sizing: border-box;
     flex-direction: column;
     display: flex;
@@ -156,8 +156,10 @@
     padding-top: 1vh;
 }
 
+
 .forgot_me{
     height: min(2.4vh, 1.2vw);
     width: min(2.4vh, 1.2vw);
     margin: 0vh 0.5vw 0.3vh 0vw;
 }
+
