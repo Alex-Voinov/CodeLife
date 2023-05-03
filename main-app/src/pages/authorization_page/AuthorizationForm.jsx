@@ -1,21 +1,14 @@
 import React from 'react'
 import './style.css';
 import DesignButton from '../../components/UI/Buttons/ButtonA/AuthButton';
+import LoginInput from '../../components/UI/Inputs/LoginInput';
+
 const AuthorizationForm = ({switchFunc, sAuth}) => {
     return (
         <form>
-            <div className="input_with_logo">
-                <div className="input_logo">
-                    <div id="logo_email"></div>
-                </div>
-                <input type="text" placeholder="Введите E-mail" id="input_email" />
-            </div>
-            <div className="input_with_logo">
-                <div className="input_logo">
-                    <div id="logo_pass"></div>
-                </div>
-                <input type="password" placeholder="Введите пароль" id="input_pass" />
-            </div>
+            <LoginInput inputType={'login'}/>
+            <LoginInput inputType={'password'}/>
+
             <div id="additional_option">
                 <label>
                     <input type="checkbox" id="checkbox" /> Запомнить меня

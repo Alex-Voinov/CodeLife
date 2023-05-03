@@ -45,7 +45,7 @@
     text-align: center;
 }
 
-#authorization_form {
+.authorization_form {
     width: var(--authorization_form_width);
     height: 100%;
     background-color: black;
@@ -55,7 +55,7 @@
     flex-direction: column;
 }
 
-#authorization_form_title {
+.authorization_form_title {
     width: 100%;
     position: relative;
     background-color: black;
@@ -86,7 +86,7 @@
     color: var(--main_color);
 }
 
-#authorization_form form {
+.authorization_form form {
     width: 100%;
     height: calc(100% - var(--authorization_form_footer_height) - var(--authorization_form_title_height));
     background-color: rgb(227, 227, 227);
@@ -107,43 +107,6 @@
     width: 98%;
 }
 
-.input_with_logo {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-}
-
-.input_with_logo input::placeholder{
-    font-family: 'Comfortaa';
-    font-style: normal;
-    font-weight: 400;
-    font-size: min(3vh, 2vw);
-    line-height: min(3vh, 2vw);
-    color: #626262;
-}
-
-
-.input_logo {
-    height: 100%;
-    width: 15%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px 0 0 20px;
-}
-
-
-
-#input_email,
-#input_pass {
-    width: 85%;
-    height: 6vh;
-    border-radius: 0 20px 20px 0;
-    box-sizing: border-box;
-    font-size: min(3.5vh, 2vw);
-    padding-left: 0.5vw;
-}
 
 #buttons_container {
     box-sizing: border-box;
@@ -191,8 +154,6 @@
     transform: scaleX(1);
 }
 
-
-
 .authorization_form_footer {
     width: 100%;
     background-color: black;
@@ -208,29 +169,6 @@
     align-items: center;
     box-sizing: border-box;
     justify-content: center;
-}
-
-.social_logo {
-    width: 3vw;
-    height: 5vh;
-    border-radius: 50%;
-    background-color: #009AAC;
-    margin-left: 2vw;
-}
-
-
-
-#logo_email{
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: min(5.6vh, 2.8vw);
-    width: min(5.6vh, 2.8vw);
-}
-#logo_pass{
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: min(5.6vh, 2.8vw);
-    width: min(5.6vh, 2.8vw);
 }
 
 
