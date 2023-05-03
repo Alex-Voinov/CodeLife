@@ -99,7 +99,7 @@
 
 }
 
-#additional_option {
+.additional_option {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,7 +116,7 @@
     height: 17vh;
 }
 
-#additional_option label{
+.additional_option label{
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 400;
@@ -126,33 +126,6 @@
     line-height: min(2.5vh, 1.4vw);
 }
 
-#additional_option a {
-    font-family: 'Comfortaa';
-    font-style: normal;
-    font-weight: 400;
-    font-size: min(2.5vh, 1.4vw);
-    line-height: min(2.5vh, 1.4vw);
-    text-decoration-line: none;
-    color: var(--main_color);
-    position: relative;
-}
-
-#additional_option a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    background-color: var(--main_color);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease-in-out;
-}
-
-#additional_option a:hover::after {
-    transform: scaleX(1);
-}
 
 .authorization_form_footer {
     width: 100%;
@@ -183,7 +156,7 @@
     padding-top: 1vh;
 }
 
-#checkbox{
+.forgot_me{
     height: min(2.4vh, 1.2vw);
     width: min(2.4vh, 1.2vw);
     margin: 0vh 0.5vw 0.3vh 0vw;

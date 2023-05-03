@@ -2,6 +2,8 @@ import React from 'react'
 import './style.css';
 import DesignButton from '../../components/UI/Buttons/ButtonA/AuthButton';
 import LoginInput from '../../components/UI/Inputs/LoginInput';
+import StandartedCheckbox from '../../components/UI/Checkboxes/StandartedCheckbox';
+import UnderlinedLink from '../../components/UI/UnderlinedLink/UnderlinedLink';
 
 const AuthorizationForm = ({switchFunc, sAuth}) => {
     return (
@@ -9,11 +11,11 @@ const AuthorizationForm = ({switchFunc, sAuth}) => {
             <LoginInput inputType={'login'}/>
             <LoginInput inputType={'password'}/>
 
-            <div id="additional_option">
-                <label>
-                    <input type="checkbox" id="checkbox" /> Запомнить меня
-                </label>
-                <a href="#">Забыли пароль?</a>
+            <div className="additional_option">
+                <StandartedCheckbox className='forgot_me'>
+                    Запомнить меня
+                </StandartedCheckbox>
+                <UnderlinedLink>Забыли пароль?</UnderlinedLink>
             </div>
             <div id="buttons_container">
                 <DesignButton onClick={sAuth}>
