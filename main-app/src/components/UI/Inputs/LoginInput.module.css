@@ -37,3 +37,8 @@
     padding-left: 0.5vw;
 }
 
+.content:focus {
+    outline: none;
+    box-shadow: none;
+}
+
