@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './CompanyLogo.module.css'
-const CompanyLogo = () => {
+const CompanyLogo = (props) => {
     return (
-        <div className={styles.company_logo}>
+        <div className={styles.company_logo} {...props}>
             CL
         </div>
     )

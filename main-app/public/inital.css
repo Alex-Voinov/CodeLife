@@ -51,3 +51,12 @@ td,th{padding:0}
     transition-property: opacity;
     transition-duration: 1s;
 }
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('/fonts/Comfortaa.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('/fonts/Inconsolata.ttf') format('truetype');
+}
+
