@@ -193,7 +193,7 @@
 
 
 
-#authorization_form_footer {
+.authorization_form_footer {
     width: 100%;
     background-color: black;
     height: var(--authorization_form_footer_height);
@@ -207,6 +207,7 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    justify-content: center;
 }
 
 .social_logo {
@@ -232,24 +233,16 @@
     width: min(5.6vh, 2.8vw);
 }
 
-#logo_facebook,
-#logo_google,
-#logo_vk,
-#logo_tweter,
-#logo_apple{
-    background-size: cover;
-    width: 1.2em;
-    height: 1.2em;
-}
 
-#lang_selecter {
+.lang_selecter {
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 700;
     font-size: min(5vh, 3vw);
     line-height: min(5vh, 3vw);
     color: var(--main_color);
-    margin-left: 6vw;
+    margin-right: 3vw;
+    padding-top: 1vh;
 }
 
 #checkbox{

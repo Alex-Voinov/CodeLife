@@ -5,10 +5,15 @@ import CircularIconPanel from '../../components/Decorations/CircularIconPanel/Ci
 import CompanyLogo from '../../components/Decorations/CL_logo/CompanyLogo';
 import AuthorizationForm from './AuthorizationForm';
 import RegistrationForm from './RegistrationForm';
+import {useNavigate } from 'react-router-dom';
+import generateFunctionTransfer from '../../utils/animatedBacground';
 
 const AuthorizationPage = () => {
 
-    let [registrationMode, setRegistrationMode] = useState(false);
+    const [registrationMode, setRegistrationMode] = useState(false);
+
+    const history = useNavigate();
+    const [goMain, goLC] = generateFunctionTransfer(history, ['/','/personal_account'])
 
     const switchMode = (e) => {
         console.log(registrationMode);
@@ -41,16 +46,16 @@ const AuthorizationPage = () => {
                 </div>
                 <div id="authorization_form">
                     <div id="authorization_form_title">
-                        {registrationMode? 'Регистарция': 'Авторизация'} <span className="clickable" id="form_close">&times;</span>{' '}
+                        {registrationMode? 'Регистарция': 'Авторизация'} <span className="clickable" onClick={goMain} id="form_close">&times;</span>
                     </div>
                     {
                         registrationMode 
-                        ? <RegistrationForm switchFunc={switchMode}/> 
-                        : <AuthorizationForm switchFunc={switchMode} />
+                        ? <RegistrationForm switchFunc={switchMode} sAuth={goLC}/> 
+                        : <AuthorizationForm switchFunc={switchMode} sAuth={goLC}/>
                     }
-                    <div id="authorization_form_footer">
+                    <div className="authorization_form_footer">
                         <CircularIconPanel dataIcons={dataIcons} styleIcons={{width: '3vw', height:' 5vh'}}/>  
-                        <div className="clickable" id="lang_selecter">
+                        <div className="clickable lang_selecter">
                             RU
                         </div>
                     </div>

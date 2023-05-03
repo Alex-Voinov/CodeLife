@@ -2,7 +2,7 @@ import React from 'react'
 import './style.css';
 import DesignButton from '../../components/UI/Buttons/ButtonA/AuthButton';
 
-const RegistrationForm = ({switchFunc}) => {
+const RegistrationForm = ({switchFunc, sAuth}) => {
     return (
         <form>
             <div className="input_with_logo">
@@ -24,7 +24,7 @@ const RegistrationForm = ({switchFunc}) => {
                 <a href="#">Забыли пароль?</a>
             </div>
             <div id="buttons_container">
-                <DesignButton>
+                <DesignButton onClick={sAuth}>
                     Создать аккаунт
                 </DesignButton>
                 <DesignButton onClick={switchFunc}>
