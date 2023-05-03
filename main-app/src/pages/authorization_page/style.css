@@ -3,27 +3,16 @@
     --all_content_magrin_left: 6vw;
     --all_content_magrin_top: 9vh;
     --all_content_magrin_bottom: 9vh;
-
     --Company_title_width: 35vw;
     --Company_title_height: 26vh;
-
     --Company_logo_width: 15vw;
     --Company_logo_height: 9vw;
-
     --attributes_container_gap: 11vh;
-
     --authorization_form_width: 39vw;
-
     --authorization_form_title_height: 13%;
     --authorization_form_footer_height: 13%;
-
-
     --main_color: #009AAC;
-
 }
-
-
-
 
 .authorization_page_content {
     width: 100%;
@@ -43,14 +32,14 @@
     box-sizing: border-box;
 }
 
-#Company_title {
+.Company_title {
     width: var(--Company_title_width);
     height: var(--Company_title_height);
-    font-family: 'Inconsolata';
+    font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 700;
     font-size: min(14vh, 10vw);
-    line-height: min(12vh, 8vw);
+    line-height: min(15vh, 10vw);
     text-align: center;
     color: var(--main_color);
     text-align: center;

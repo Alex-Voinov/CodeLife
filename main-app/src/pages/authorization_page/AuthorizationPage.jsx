@@ -1,12 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Matrix from '../../components/Decorations/Matrix/Matrix'
 import './style.css';
 import CircularIconPanel from '../../components/Decorations/CircularIconPanel/CircularIconPanel'
 import CompanyLogo from '../../components/Decorations/CL_logo/CompanyLogo';
 import AuthorizationForm from './AuthorizationForm';
+import RegistrationForm from './RegistrationForm';
+
 const AuthorizationPage = () => {
 
-    
+    let [registrationMode, setRegistrationMode] = useState(false);
+
+    const switchMode = (e) => {
+        console.log(registrationMode);
+        e.preventDefault();
+        setRegistrationMode(!registrationMode);
+    }
 
     const dataIcons = [
         'apple',
@@ -22,19 +30,24 @@ const AuthorizationPage = () => {
         height: 'var(--Company_logo_height)'
     }
 
+
     return (
         <>
             <Matrix />
             <div className="authorization_page_content">
                 <div className="attributes_container">
-                    <div id="Company_title">Code Life World</div>
+                    <div className="Company_title">Code Life</div>
                     <CompanyLogo style={CL_logo_style}/>
                 </div>
                 <div id="authorization_form">
                     <div id="authorization_form_title">
-                        Авторизация <span className="clickable" id="form_close">&times;</span>{' '}
+                        {registrationMode? 'Регистарция': 'Авторизация'} <span className="clickable" id="form_close">&times;</span>{' '}
                     </div>
-                    <AuthorizationForm />
+                    {
+                        registrationMode 
+                        ? <RegistrationForm switchFunc={switchMode}/> 
+                        : <AuthorizationForm switchFunc={switchMode} />
+                    }
                     <div id="authorization_form_footer">
                         <CircularIconPanel dataIcons={dataIcons} styleIcons={{width: '3vw', height:' 5vh'}}/>  
                         <div className="clickable" id="lang_selecter">

@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css';
-const AuthorizationForm = ({switchFunc}) => {
+
+const RegistrationForm = ({switchFunc}) => {
     return (
         <form>
             <div className="input_with_logo">
@@ -23,14 +24,14 @@ const AuthorizationForm = ({switchFunc}) => {
             </div>
             <div id="buttons_container">
                 <button className="clickable" id="button_log_in_enter">
-                    Войти
+                    Создать аккаунт
                 </button>
                 <button className="clickable" id="button_sign_up" onClick={switchFunc}>
-                    Регистрация
+                    Аутентификация
                 </button>
             </div>
         </form>
     )
 }
 
-export default AuthorizationForm
+export default RegistrationForm
