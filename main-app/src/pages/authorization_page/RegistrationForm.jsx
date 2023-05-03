@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.css';
+import DesignButton from '../../components/UI/Buttons/ButtonA/AuthButton';
 
 const RegistrationForm = ({switchFunc}) => {
     return (
@@ -23,12 +24,12 @@ const RegistrationForm = ({switchFunc}) => {
                 <a href="#">Забыли пароль?</a>
             </div>
             <div id="buttons_container">
-                <button className="clickable" id="button_log_in_enter">
+                <DesignButton>
                     Создать аккаунт
-                </button>
-                <button className="clickable" id="button_sign_up" onClick={switchFunc}>
+                </DesignButton>
+                <DesignButton onClick={switchFunc}>
                     Аутентификация
-                </button>
+                </DesignButton>
             </div>
         </form>
     )
