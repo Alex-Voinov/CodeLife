@@ -19,7 +19,7 @@ const TopMenu = ({outLink}) => {
                 style={logoStyle}
             />
             <div className={styles.IC_title}>
-                Ikigai Creative
+                Code Life
             </div>
             <div className={styles.header_avatar}></div>
             <div className={styles.header_right}>
