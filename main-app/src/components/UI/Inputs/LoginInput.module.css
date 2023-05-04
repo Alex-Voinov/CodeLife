@@ -42,3 +42,32 @@
     box-shadow: none;
 }
 
+@media(max-width: 700px){
+    .logo_img{
+        height: min(10vh, 5vw);
+        width: min(10vh, 5vw);
+    }
+    .wrapper input::placeholder{
+        font-size: min(5vh, 3.5vw);
+        line-height: min(5vh, 3.5vw);
+        align-items: center;
+    }
+    .content {
+        font-size: min(7vh, 4vw);
+    }
+}
+@media(max-width: 450px){
+    .logo_img{
+        height: min(12vh, 6vw);
+        width: min(12vh, 6vw);
+    }
+    .wrapper input::placeholder{
+        font-size: min(9vh, 5vw);
+        line-height: min(9vh, 5vw);
+        align-items: center;
+    }
+    .content {
+        font-size: min(9vh, 5vw);
+    }
+}
+

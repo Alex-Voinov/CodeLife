@@ -11,7 +11,7 @@ const FormFooter = () => {
     ];
     return (
         <div className="authorization_form_footer">
-            <CircularIconPanel dataIcons={dataIcons} styleIcons={{ width: '3vw', height: ' 5vh' }} />
+            <CircularIconPanel dataIcons={dataIcons}/>
             <div className="clickable lang_selecter">
                 RU
             </div>

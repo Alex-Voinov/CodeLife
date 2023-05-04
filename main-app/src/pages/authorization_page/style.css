@@ -100,6 +100,12 @@
 
 }
 
+#CompanyLogoAuthorization{
+    margin-top: var(--attributes_container_gap);
+    width: var(--Company_logo_width);
+    height: var(--Company_logo_height);
+}
+
 .additional_option {
     display: flex;
     justify-content: space-between;
@@ -145,6 +151,11 @@
     justify-content: center;
 }
 
+.authorization_form_footer div:not(.lang_selecter) img{
+    width: min(4vw, 7vh);
+    height: min(4vw, 7vh);
+}
+
 
 .lang_selecter {
     font-family: 'Comfortaa';
@@ -167,4 +178,62 @@
 .inputBlock{
     display: flex;
     justify-content: space-between;
+}
+
+@media(max-width: 700px){
+    .authorization_page_content{
+        display: block;
+        padding: 3vh 6vh; 
+    }
+    .attributes_container{
+        width: 100%;
+        height: auto;
+    }
+    .Company_title{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2vh;
+    }
+    #CompanyLogoAuthorization{
+        display: none;
+    }
+    .authorization_form{
+        height: 80vh;
+        width: 90%;
+        margin:0 auto;
+    }
+    .authorization_form_title{
+        font-size: min(10vh, 7vw);
+    }
+    #form_close{
+        font-size: min(10vh, 7vw);
+    }
+    .forgot_me{
+        height: min(6vh, 3vw);
+        width: min(6vh, 3vw);
+    }
+    .additional_option label{
+        font-size: min(6vh, 3vw);
+        line-height: min(6vh, 3vw);
+    }
+    .authorization_form_footer div:not(.lang_selecter) img{
+        width: min(7vw, 7vh);
+        height: min(7vw, 7vh);
+    }
+}
+@media (max-width: 450px) {
+    #form_close{
+        display: none;
+    } 
+    .authorization_page_content{
+        padding: 3vh 2vh; 
+    }
+    .forgot_me{
+        height: min(7vh, 3.6vw);
+        width: min(7vh, 3.6vw);
+    }
+    .additional_option label{
+        font-size: min(7vh, 3.6vw);
+        line-height: min(7vh, 3.6vw);
+    }
 }
