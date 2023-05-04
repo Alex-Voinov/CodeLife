@@ -4,6 +4,7 @@ import NonExistentPage from './pages/non_existent_page/NonExistentPage';
 import PersonalPage from './pages/personal_page/PersonalPage';
 import AuthorizationPage from './pages/authorization_page/AuthorizationPage';
 
+
 function App() {
   return (
     <BrowserRouter>

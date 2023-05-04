@@ -1,0 +1,44 @@
+.wrapper{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 100%;
+    width: 15%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0 0 20px; 
+}
+
+.logo_img{
+    height: min(5.6vh, 2.8vw);
+    width: min(5.6vh, 2.8vw);
+}
+
+.wrapper input::placeholder{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: min(3vh, 2vw);
+    line-height: min(3vh, 2vw);
+    color: #626262;
+}
+
+.content {
+    width: 85%;
+    height: 6vh;
+    border-radius: 0 20px 20px 0;
+    box-sizing: border-box;
+    font-size: min(3.5vh, 2vw);
+    padding-left: 0.5vw;
+}
+
+.content:focus {
+    outline: none;
+    box-shadow: none;
+}
+

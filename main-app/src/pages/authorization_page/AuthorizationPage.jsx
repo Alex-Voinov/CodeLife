@@ -1,24 +1,18 @@
-import React, {useState, useEffect} from 'react'
-import Matrix from '../../components/Matrix'
-import styles from './Overlay.module.css';
+import React from 'react'
+import Matrix from '../../components/Decorations/Matrix/Matrix'
+import './style.css';
+import LeftDecorate from './LeftDecorate';
+import RightForm from './RightForm';
 
 const AuthorizationPage = () => {
-    document.body.classList.remove('blackout');
-    const [isLoading, setIsLoading] = useState(true);
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 4000);
-
-        return () => clearTimeout(timer);
-    }, []);
-
     return (
-        <div>
-            {isLoading && <div className={styles.overlay}></div>}
+        <>
             <Matrix />
-        </div>
+            <div className="authorization_page_content">
+                <LeftDecorate />
+                <RightForm />
+            </div>
+        </>
     )
 }
 
