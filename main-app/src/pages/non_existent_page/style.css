@@ -51,7 +51,7 @@
 }
 
 .error_code {
-    font-size: max(8vw, 80px);
+    font-size: min(max(8vw, 80px), 110px);
     color: black;
     text-align: center;
     text-shadow: 2px 2px 0 #009aad, -2px -2px 0 #009aad, 2px -2px 0 #009aad, -2px 2px 0 #009aad;
@@ -213,5 +213,23 @@
     }
     .error_code {
         font-size: max(8vw, 60px);
+    }
+}
+
+@media(max-width: 426px){
+    .girl_image{
+        width: 80vw;
+        left: 10vw;
+    }
+    .button_block_mobile{
+        top: 92vh;
+    }
+    #button_404_gomain{
+        font-size: min(2vh, 14px);
+        width: 40vw;
+    }
+    #button_404_goLC{
+        font-size: min(2vh, 14px);
+        width: 40vw;
     }
 }
