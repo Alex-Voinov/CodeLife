@@ -2,6 +2,7 @@ import React from 'react'
 import {useNavigate } from 'react-router-dom';
 import generateFunctionTransfer from '../../utils/animatedBacground';
 
+
 const StartPage = () => {
     const history = useNavigate();
     const [handleAuthClick, go404] = generateFunctionTransfer(history, ['authorization','какая-то дичь'])

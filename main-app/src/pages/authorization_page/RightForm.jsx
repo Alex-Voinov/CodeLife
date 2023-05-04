@@ -1,10 +1,11 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import AuthorizationForm from './AuthorizationForm';
 import RegistrationForm from './RegistrationForm';
 import FormFooter from './FormFooter';
 import FormHeader from './FormHeader';
-import {useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import generateFunctionTransfer from '../../utils/animatedBacground';
+import { motion } from "framer-motion";
 
 const RightForm = () => {
     const history = useNavigate();
@@ -16,7 +17,16 @@ const RightForm = () => {
         setRegistrationMode(!registrationMode);
     }
     return (
-        <div className="authorization_form">
+        <motion.div
+            animate={{ x: 0,  opacity: 1 }}
+            initial={{ x: 500, opacity: 0 }}
+            transition={{
+                delay: 1,
+                duration: 1,
+                repeat: 0,
+            }}
+            className="authorization_form"
+        >
             <FormHeader Mode={registrationMode} closeLink={goMain} />
             {
                 registrationMode
@@ -24,7 +34,7 @@ const RightForm = () => {
                     : <AuthorizationForm switchFunc={switchMode} sAuth={goLC} />
             }
             <FormFooter />
-        </div>
+        </motion.div>
     )
 }
 
