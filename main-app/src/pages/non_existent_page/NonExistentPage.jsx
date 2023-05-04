@@ -4,13 +4,13 @@ import AnimatedStripe from '../../components/Decorations/AnimatedStripe/Animated
 import DesignButton from '../../components/UI/Buttons/Button/DesignButton';
 import { useNavigate } from 'react-router-dom';
 import generateFunctionTransfer from '../../utils/animatedBacground';
-
+import CompanyTitle from '../../components/Decorations/CL_title/CompanyTitle';
 const NonExistentPage = () => {
 
     const history = useNavigate();
     const [styleObject, setStyleObject] = useState(null);
     const [goMain, goLC] = generateFunctionTransfer(history, ["", "personal_account"])
-       
+
     return (
         <div className='main_background'>
             <div className='company_title_mobile glow_element'>Code Live</div>
@@ -30,9 +30,7 @@ const NonExistentPage = () => {
                         <DesignButton onClick={goMain} id='button_404_gomain'>Главная страница</DesignButton>
                         <DesignButton onClick={goLC} id='button_404_goLC'>Личный кабинет</DesignButton>
                     </div>
-                    <div className='company_title_wrapper' style={{ display: 'flex' }}>
-                        <div className='company_title glow_element'>Code Live</div>
-                    </div>
+                    <CompanyTitle/>
                 </div>
                 <div className='local_header_mobile'>
                     <div className='error_ntf '>Страница<br/>не найдена</div>
