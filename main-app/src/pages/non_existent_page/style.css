@@ -26,11 +26,11 @@
     display: none;
 }
 
-.company_title {
+#company_title_404 {
     font-size: max(4vw, 40px);
     text-align: center;
 }
-.company_title_mobile{
+#company_title_mobile_404{
     display: none;
 }
 
@@ -139,10 +139,10 @@
     .company_title_wrapper{
         display: none;
     }
-    .company_title{
+    #company_title_404{
         display: none;
     }
-    .company_title_mobile{
+    #company_title_mobile_404{
         display: flex;
         font-size: max(4vw, 40px);
         width: 100vw;
