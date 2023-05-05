@@ -1,0 +1,11 @@
+.company_title {
+    font-size: max(4vw, 40px);
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.company_title_wrapper{
+    display: flex;
+}
